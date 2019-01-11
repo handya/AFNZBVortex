@@ -35,6 +35,42 @@
                                  }];
     
     
+    
+    // Delete a NZB
+    NSDictionary *params = @{@"nzbid":@"yourNZBID"};
+    [[AFNZBVortex sharedInstance] GETRequest:kAFNZBVortexNZBCancelDelete
+                                  parameters:params
+                                 withSuccess:^(NSDictionary * _Nonnull responce) {
+        NSLog(@"Success: %@", responce);
+    } failure:^(NSError * _Nonnull error) {
+        NSLog(@"Error: %@", error);
+    }];
+    
+    // add NZB via url
+    NSDictionary *url = @{@"url":@"http://example.com/test.nzb"};
+    [[AFNZBVortex sharedInstance] GETRequest:kAFNZBVortexNZBAdd
+                                  parameters:url
+                                 withSuccess:^(NSDictionary * _Nonnull responce) {
+                                     NSLog(@"Success: %@", responce);
+    } failure:^(NSError * _Nonnull error) {
+        NSLog(@"Error: %@", error);
+    }];
+    
+    NSData *nzb = [NSData dataWithContentsOfFile:@""];
+    
+    [[AFNZBVortex sharedInstance] uploadNZB:nzb
+                                   fileName:@"test.nzb"
+                                       name:@"test"
+                                  groupName:@""
+                        uploadProgressBlock:^(NSUInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite) {
+        
+    } withSuccess:^(NSDictionary * _Nonnull responce) {
+        NSLog(@"Success: %@", responce);
+    } failure:^(NSError * _Nonnull error) {
+        NSLog(@"Error: %@", error);
+    }];
+    
+    
 }
 
 
