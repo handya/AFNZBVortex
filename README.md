@@ -73,13 +73,12 @@ NSData *nzb = [NSData dataWithContentsOfFile:@""];
 When adding NZB via url, send the nzb url in params with "url" as the dictionary key
 
 ```Objective-c
-  NSDictionary *url = @{@"url":@"http://example.com/test.nzb"};
-  [[AFNZBVortex sharedInstance] GETRequest:kAFNZBVortexNZBAdd
-                                parameters:url
-                               withSuccess:^(NSDictionary * _Nonnull responce) {
-                                   NSLog(@"Success: %@", responce);
-  } failure:^(NSError * _Nonnull error) {
-      NSLog(@"Error: %@", error);
-  }];
-
+NSDictionary *url = @{@"url":@"http://example.com/test.nzb"};
+[[AFNZBVortex sharedInstance] GETRequest:kAFNZBVortexNZBAdd
+                              parameters:url
+                             withSuccess:^(NSDictionary * _Nonnull responce) {
+                                 NSLog(@"Success: %@", responce);
+} failure:^(NSError * _Nonnull error) {
+    NSLog(@"Error: %@", error);
+}];
 ```
