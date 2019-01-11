@@ -1,5 +1,5 @@
 # AFNZBVortex
-API Wrapper for [NZBVortex API](https://www.nzbvortex.com/developerconnect/Network_API_Documentation_1.6.pdf)
+Objective-c API Wrapper for [NZBVortex API](https://www.nzbvortex.com/developerconnect/Network_API_Documentation_1.6.pdf)
 
 ## Requirements 
 
