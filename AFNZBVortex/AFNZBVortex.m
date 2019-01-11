@@ -70,8 +70,12 @@
                 requestURL = [requestURL stringByReplacingOccurrencesOfString:@":nzbid" withString:[mutableParams objectForKey:@"nzbid"]];
                 [mutableParams removeObjectForKey:@"nzbid"];
             } else {
-                NSLog(@"!!!NZBID NOT FOUND!!!! NZBID is required for this request!");
-                //failure();
+                // no NZBID parsed in params, required for request
+                NSMutableDictionary* details = [NSMutableDictionary dictionary];
+                [details setValue:@"NO NZBID - NZBID need for this request, please add object with 'nzbid' for key"
+                           forKey:NSLocalizedDescriptionKey];
+                NSError *error = [NSError errorWithDomain:@"AFNZBVortex" code:400 userInfo:details];
+                failure(error);
                 return;
             }
         }

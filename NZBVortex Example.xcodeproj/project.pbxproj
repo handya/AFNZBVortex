@@ -103,15 +103,15 @@
 		1309928D21E81F380060C861 /* AFNZBVortex */ = {
 			isa = PBXGroup;
 			children = (
-				1309928E21E81F380060C861 /* AFNZBVortexNetworkManager.m */,
-				1309928F21E81F380060C861 /* AFNZBVortexConstants.h */,
 				1309929021E81F380060C861 /* AFNZBVortex.h */,
-				1309929121E81F380060C861 /* AFNZBVortexSessionManager.h */,
-				1309929221E81F380060C861 /* AFNZBVortexHost.h */,
-				1309929321E81F380060C861 /* AFNZBVortexNetworkManager.h */,
-				1309929421E81F380060C861 /* AFNZBVortexSessionManager.m */,
 				1309929521E81F380060C861 /* AFNZBVortex.m */,
+				1309929321E81F380060C861 /* AFNZBVortexNetworkManager.h */,
+				1309928E21E81F380060C861 /* AFNZBVortexNetworkManager.m */,
+				1309929121E81F380060C861 /* AFNZBVortexSessionManager.h */,
+				1309929421E81F380060C861 /* AFNZBVortexSessionManager.m */,
+				1309928F21E81F380060C861 /* AFNZBVortexConstants.h */,
 				1309929621E81F380060C861 /* AFNZBVortexConstants.m */,
+				1309929221E81F380060C861 /* AFNZBVortexHost.h */,
 				1309929721E81F380060C861 /* AFNZBVortexHost.m */,
 			);
 			path = AFNZBVortex;
