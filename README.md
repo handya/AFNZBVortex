@@ -9,6 +9,15 @@ AFCryptography - Included
 
 ## Usage:
 
+### Installation
+Copy AFNZBVortex and AFCryptography into project then import AFNZBVortex.h
+
+```Objective-c
+
+#import "AFNZBVortex.h"
+
+```
+
 ### Setup
 First setup up with setNewHostWithURL:
 Unless using customURL: leave blank 
