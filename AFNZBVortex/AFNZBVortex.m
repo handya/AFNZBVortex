@@ -72,7 +72,19 @@
             } else {
                 // no NZBID parsed in params, required for request
                 NSMutableDictionary* details = [NSMutableDictionary dictionary];
-                [details setValue:@"NO NZBID - NZBID need for this request, please add object with 'nzbid' for key"
+                [details setValue:@"NO NZBID - NZBID need for this request, please add params with object with 'nzbid' for key"
+                           forKey:NSLocalizedDescriptionKey];
+                NSError *error = [NSError errorWithDomain:@"AFNZBVortex" code:400 userInfo:details];
+                failure(error);
+                return;
+            }
+        }
+        
+        if ([request isEqualToString:kAFNZBVortexNZBAdd]) {
+            if (![mutableParams objectForKey:@"url"]) {
+                // no URL parsed in params, required for request
+                NSMutableDictionary* details = [NSMutableDictionary dictionary];
+                [details setValue:@"NO URL - NZB URL need for this request, please add params with object with 'url' for key"
                            forKey:NSLocalizedDescriptionKey];
                 NSError *error = [NSError errorWithDomain:@"AFNZBVortex" code:400 userInfo:details];
                 failure(error);
