@@ -9,7 +9,6 @@ Pod::Spec.new do |s|
   s.source        = { :git => "https://github.com/handya/AFNZBVortex.git", :tag => "#{s.version}" }
   s.public_header_files = "AFNZBVortex/*.h"
   s.source_files = "AFNZBVortex/*.{h,m}"
-  s.resources     = "AFCryptography/*.{h,m}"
   s.requires_arc = true
   s.dependency 'AFNetworking', '2.7.0'
 end
