@@ -7,9 +7,9 @@
 //
 
 #import "AFNZBVortexSessionManager.h"
-#import "AFCryptography.h"
 #import "AFNZBVortexConstants.h"
 #import "AFNZBVortexNetworkManager.h"
+#include <CommonCrypto/CommonDigest.h>
 
 #define sessionlength 300 // session time in seconds
 
@@ -20,16 +20,10 @@
     NSDate *sessionStartTime;
     
     AFNZBVortexHost *currentHost;
-    
-    AFCryptography *crypto;
 }
 
 - (id)init {
-    self = [super init];
-    if (self){
-        crypto = [[AFCryptography alloc] init];
-    }
-    return self;
+    return [super init];
 }
 
 - (void)setHost:(AFNZBVortexHost *)host {
@@ -131,7 +125,7 @@
     
     NSString *hash = [NSString stringWithFormat:@"%@:%@:%@", nonce, cnonce, currentHost.APIKEY];
     
-    hash = [crypto hashStringWithSHA256ToBase64:hash];
+    hash = [self hashStringWithSHA256ToBase64:hash];
     
     // url encode "+", yes i know its hacky
     hash = [hash stringByReplacingOccurrencesOfString:@"+" withString:@"%2B"];
@@ -197,7 +191,7 @@
 
 // generate random onetime client side nonce
 - (NSString *)generateClientNonce {
-    return [crypto randomStringWithLength:8];
+    return [self randomStringWithLength:8];
 }
 
 - (NSTimeInterval )sessionTime {
@@ -207,6 +201,43 @@
 - (NSString *)readableRemainingSessionTime {
     int time = sessionlength - (int)[self sessionTime];
     return [NSString stringWithFormat:@"Session expires in %dmin %dsec", time / 60, time % 60];
+}
+
+// return nsstring with random charters and numbers
+- (NSString *)randomStringWithLength:(int)len {
+    NSString *letters = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    NSMutableString *randomString = [NSMutableString stringWithCapacity: len];
+    for (int i=0; i<len; i++) {
+        [randomString appendFormat: @"%C", [letters characterAtIndex: arc4random_uniform((int)[letters length])]];
+    }
+    return randomString;
+}
+
+// hash string to SHA256 bytes then hash bites to base64 string
+- (NSString *)hashStringWithSHA256ToBase64:(NSString *)stringToHash {
+    const char *s = [stringToHash cStringUsingEncoding:NSASCIIStringEncoding];
+    
+    NSData *keyData = [NSData dataWithBytes:s length:strlen(s)];
+    
+    uint8_t digest[CC_SHA256_DIGEST_LENGTH] = {0};
+    CC_SHA256(keyData.bytes, (int)keyData.length, digest);
+    NSData *output = [NSData dataWithBytes:digest length:CC_SHA256_DIGEST_LENGTH];
+    
+    NSString *base64 = [output base64EncodedStringWithOptions:kNilOptions];
+    return base64;
+}
+
+// hash string to MD5 using NSUTF16 Little Endian Encoding
+- (NSString *)md5HexDigest:(NSString *)input {
+    NSData *data = [input dataUsingEncoding:NSUTF16LittleEndianStringEncoding];
+    unsigned char result[CC_MD5_DIGEST_LENGTH];
+    CC_MD5([data bytes], (CC_LONG)[data length], result);
+    
+    NSMutableString *ret = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH*2];
+    for(int i = 0; i<CC_MD5_DIGEST_LENGTH; i++) {
+        [ret appendFormat:@"%02x",result[i]];
+    }
+    return ret;
 }
 
 @end
