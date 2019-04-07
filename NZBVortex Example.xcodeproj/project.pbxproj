@@ -13,7 +13,6 @@
 		1309927D21E81F090060C861 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1309927C21E81F090060C861 /* Assets.xcassets */; };
 		1309928021E81F090060C861 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1309927E21E81F090060C861 /* LaunchScreen.storyboard */; };
 		1309928321E81F090060C861 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309928221E81F090060C861 /* main.m */; };
-		1309928C21E81F2F0060C861 /* AFCryptography.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309928B21E81F2F0060C861 /* AFCryptography.m */; };
 		1309929821E81F380060C861 /* AFNZBVortexNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309928E21E81F380060C861 /* AFNZBVortexNetworkManager.m */; };
 		1309929921E81F380060C861 /* AFNZBVortexSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309929421E81F380060C861 /* AFNZBVortexSessionManager.m */; };
 		1309929A21E81F380060C861 /* AFNZBVortex.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309929521E81F380060C861 /* AFNZBVortex.m */; };
@@ -32,8 +31,6 @@
 		1309927F21E81F090060C861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1309928121E81F090060C861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1309928221E81F090060C861 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1309928A21E81F2F0060C861 /* AFCryptography.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFCryptography.h; sourceTree = "<group>"; };
-		1309928B21E81F2F0060C861 /* AFCryptography.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFCryptography.m; sourceTree = "<group>"; };
 		1309928E21E81F380060C861 /* AFNZBVortexNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNZBVortexNetworkManager.m; sourceTree = "<group>"; };
 		1309928F21E81F380060C861 /* AFNZBVortexConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNZBVortexConstants.h; sourceTree = "<group>"; };
 		1309929021E81F380060C861 /* AFNZBVortex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNZBVortex.h; sourceTree = "<group>"; };
@@ -76,7 +73,6 @@
 		1309927221E81F090060C861 /* NZBVortex Example */ = {
 			isa = PBXGroup;
 			children = (
-				1309928921E81F2F0060C861 /* AFCryptography */,
 				1309928D21E81F380060C861 /* AFNZBVortex */,
 				1309927321E81F090060C861 /* AppDelegate.h */,
 				1309927421E81F090060C861 /* AppDelegate.m */,
@@ -90,15 +86,6 @@
 			);
 			path = "NZBVortex Example";
 			sourceTree = "<group>";
-		};
-		1309928921E81F2F0060C861 /* AFCryptography */ = {
-			isa = PBXGroup;
-			children = (
-				1309928A21E81F2F0060C861 /* AFCryptography.h */,
-				1309928B21E81F2F0060C861 /* AFCryptography.m */,
-			);
-			path = AFCryptography;
-			sourceTree = SOURCE_ROOT;
 		};
 		1309928D21E81F380060C861 /* AFNZBVortex */ = {
 			isa = PBXGroup;
@@ -191,7 +178,6 @@
 				1309929C21E81F380060C861 /* AFNZBVortexHost.m in Sources */,
 				1309928321E81F090060C861 /* main.m in Sources */,
 				1309929921E81F380060C861 /* AFNZBVortexSessionManager.m in Sources */,
-				1309928C21E81F2F0060C861 /* AFCryptography.m in Sources */,
 				1309929A21E81F380060C861 /* AFNZBVortex.m in Sources */,
 				1309927521E81F090060C861 /* AppDelegate.m in Sources */,
 				1309929821E81F380060C861 /* AFNZBVortexNetworkManager.m in Sources */,
