@@ -5,8 +5,6 @@ Objective-c API Wrapper for [NZBVortex API](https://www.nzbvortex.com/developerc
 
 [AFNetworking](https://github.com/AFNetworking/AFNetworking)
 
-AFCryptography - Included
-
 ## Usage:
 
 ### Installation
