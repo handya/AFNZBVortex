@@ -18,8 +18,25 @@
 		1309929A21E81F380060C861 /* AFNZBVortex.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309929521E81F380060C861 /* AFNZBVortex.m */; };
 		1309929B21E81F380060C861 /* AFNZBVortexConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309929621E81F380060C861 /* AFNZBVortexConstants.m */; };
 		1309929C21E81F380060C861 /* AFNZBVortexHost.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309929721E81F380060C861 /* AFNZBVortexHost.m */; };
+		13F8A3A12297D47300CBB7BF /* NZBVortex_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F8A3A02297D47300CBB7BF /* NZBVortex_ExampleTests.m */; };
+		13F8A3A82297D53B00CBB7BF /* AFNZBVortex.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309929521E81F380060C861 /* AFNZBVortex.m */; };
+		13F8A3A92297D53B00CBB7BF /* AFNZBVortexNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309928E21E81F380060C861 /* AFNZBVortexNetworkManager.m */; };
+		13F8A3AA2297D53B00CBB7BF /* AFNZBVortexSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309929421E81F380060C861 /* AFNZBVortexSessionManager.m */; };
+		13F8A3AB2297D53B00CBB7BF /* AFNZBVortexConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309929621E81F380060C861 /* AFNZBVortexConstants.m */; };
+		13F8A3AC2297D53B00CBB7BF /* AFNZBVortexHost.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309929721E81F380060C861 /* AFNZBVortexHost.m */; };
+		1CA534FD9F9691AB69447087 /* libPods-NZBVortex ExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 607A3E0D7BF6A0C8B06CCB93 /* libPods-NZBVortex ExampleTests.a */; };
 		8579D6A742FE221B71E3FD60 /* libPods-NZBVortex Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F08A178C8DDF83060CD3E010 /* libPods-NZBVortex Example.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13F8A3A32297D47300CBB7BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1309926821E81F090060C861 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1309926F21E81F090060C861;
+			remoteInfo = "NZBVortex Example";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1309927021E81F090060C861 /* NZBVortex Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NZBVortex Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,7 +59,13 @@
 		1309929521E81F380060C861 /* AFNZBVortex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNZBVortex.m; sourceTree = "<group>"; };
 		1309929621E81F380060C861 /* AFNZBVortexConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNZBVortexConstants.m; sourceTree = "<group>"; };
 		1309929721E81F380060C861 /* AFNZBVortexHost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNZBVortexHost.m; sourceTree = "<group>"; };
+		13F8A39E2297D47300CBB7BF /* NZBVortex ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NZBVortex ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13F8A3A02297D47300CBB7BF /* NZBVortex_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NZBVortex_ExampleTests.m; sourceTree = "<group>"; };
+		13F8A3A22297D47300CBB7BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C393F6F913F69364DA1D4CE /* Pods-NZBVortex Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NZBVortex Example.debug.xcconfig"; path = "Target Support Files/Pods-NZBVortex Example/Pods-NZBVortex Example.debug.xcconfig"; sourceTree = "<group>"; };
+		607A3E0D7BF6A0C8B06CCB93 /* libPods-NZBVortex ExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NZBVortex ExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		860729396D2F951A76D6A3DF /* Pods-NZBVortex ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NZBVortex ExampleTests.release.xcconfig"; path = "Target Support Files/Pods-NZBVortex ExampleTests/Pods-NZBVortex ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		C1C60CAE0B6BD58992F91DA8 /* Pods-NZBVortex ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NZBVortex ExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-NZBVortex ExampleTests/Pods-NZBVortex ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CA6B30BAB2FA28B8AEB20EE3 /* Pods-NZBVortex Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NZBVortex Example.release.xcconfig"; path = "Target Support Files/Pods-NZBVortex Example/Pods-NZBVortex Example.release.xcconfig"; sourceTree = "<group>"; };
 		F08A178C8DDF83060CD3E010 /* libPods-NZBVortex Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NZBVortex Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -56,6 +79,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		13F8A39B2297D47300CBB7BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CA534FD9F9691AB69447087 /* libPods-NZBVortex ExampleTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -64,8 +95,9 @@
 			children = (
 				1C393F6F913F69364DA1D4CE /* Pods-NZBVortex Example.debug.xcconfig */,
 				CA6B30BAB2FA28B8AEB20EE3 /* Pods-NZBVortex Example.release.xcconfig */,
+				C1C60CAE0B6BD58992F91DA8 /* Pods-NZBVortex ExampleTests.debug.xcconfig */,
+				860729396D2F951A76D6A3DF /* Pods-NZBVortex ExampleTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				1309927221E81F090060C861 /* NZBVortex Example */,
+				13F8A39F2297D47300CBB7BF /* NZBVortex ExampleTests */,
 				1309927121E81F090060C861 /* Products */,
 				0AF46013899443D55946FA9E /* Pods */,
 				F7936E10510FB311E52A7CA4 /* Frameworks */,
@@ -83,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				1309927021E81F090060C861 /* NZBVortex Example.app */,
+				13F8A39E2297D47300CBB7BF /* NZBVortex ExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,10 +155,20 @@
 			path = AFNZBVortex;
 			sourceTree = SOURCE_ROOT;
 		};
+		13F8A39F2297D47300CBB7BF /* NZBVortex ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				13F8A3A02297D47300CBB7BF /* NZBVortex_ExampleTests.m */,
+				13F8A3A22297D47300CBB7BF /* Info.plist */,
+			);
+			path = "NZBVortex ExampleTests";
+			sourceTree = "<group>";
+		};
 		F7936E10510FB311E52A7CA4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				F08A178C8DDF83060CD3E010 /* libPods-NZBVortex Example.a */,
+				607A3E0D7BF6A0C8B06CCB93 /* libPods-NZBVortex ExampleTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -150,6 +194,26 @@
 			productReference = 1309927021E81F090060C861 /* NZBVortex Example.app */;
 			productType = "com.apple.product-type.application";
 		};
+		13F8A39D2297D47300CBB7BF /* NZBVortex ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13F8A3A72297D47300CBB7BF /* Build configuration list for PBXNativeTarget "NZBVortex ExampleTests" */;
+			buildPhases = (
+				88F302B3EB55725ACECCD600 /* [CP] Check Pods Manifest.lock */,
+				13F8A39A2297D47300CBB7BF /* Sources */,
+				13F8A39B2297D47300CBB7BF /* Frameworks */,
+				13F8A39C2297D47300CBB7BF /* Resources */,
+				D4633E996DF397ED59F753BF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13F8A3A42297D47300CBB7BF /* PBXTargetDependency */,
+			);
+			name = "NZBVortex ExampleTests";
+			productName = "NZBVortex ExampleTests";
+			productReference = 13F8A39E2297D47300CBB7BF /* NZBVortex ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,6 +225,10 @@
 				TargetAttributes = {
 					1309926F21E81F090060C861 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					13F8A39D2297D47300CBB7BF = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 1309926F21E81F090060C861;
 					};
 				};
 			};
@@ -178,6 +246,7 @@
 			projectRoot = "";
 			targets = (
 				1309926F21E81F090060C861 /* NZBVortex Example */,
+				13F8A39D2297D47300CBB7BF /* NZBVortex ExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -193,9 +262,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		13F8A39C2297D47300CBB7BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		88F302B3EB55725ACECCD600 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NZBVortex ExampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9C5C3A8D59EFB74379BEAA73 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -218,6 +316,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D4633E996DF397ED59F753BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NZBVortex ExampleTests/Pods-NZBVortex ExampleTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NZBVortex ExampleTests/Pods-NZBVortex ExampleTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NZBVortex ExampleTests/Pods-NZBVortex ExampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -236,7 +351,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		13F8A39A2297D47300CBB7BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13F8A3A12297D47300CBB7BF /* NZBVortex_ExampleTests.m in Sources */,
+				13F8A3AC2297D53B00CBB7BF /* AFNZBVortexHost.m in Sources */,
+				13F8A3AB2297D53B00CBB7BF /* AFNZBVortexConstants.m in Sources */,
+				13F8A3A92297D53B00CBB7BF /* AFNZBVortexNetworkManager.m in Sources */,
+				13F8A3AA2297D53B00CBB7BF /* AFNZBVortexSessionManager.m in Sources */,
+				13F8A3A82297D53B00CBB7BF /* AFNZBVortex.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13F8A3A42297D47300CBB7BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1309926F21E81F090060C861 /* NZBVortex Example */;
+			targetProxy = 13F8A3A32297D47300CBB7BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1309927921E81F090060C861 /* Main.storyboard */ = {
@@ -406,6 +542,48 @@
 			};
 			name = Release;
 		};
+		13F8A3A52297D47300CBB7BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1C60CAE0B6BD58992F91DA8 /* Pods-NZBVortex ExampleTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76PX867475;
+				INFOPLIST_FILE = "NZBVortex ExampleTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.handya.NZBVortex-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NZBVortex Example.app/NZBVortex Example";
+			};
+			name = Debug;
+		};
+		13F8A3A62297D47300CBB7BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 860729396D2F951A76D6A3DF /* Pods-NZBVortex ExampleTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76PX867475;
+				INFOPLIST_FILE = "NZBVortex ExampleTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.handya.NZBVortex-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NZBVortex Example.app/NZBVortex Example";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -423,6 +601,15 @@
 			buildConfigurations = (
 				1309928721E81F090060C861 /* Debug */,
 				1309928821E81F090060C861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13F8A3A72297D47300CBB7BF /* Build configuration list for PBXNativeTarget "NZBVortex ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13F8A3A52297D47300CBB7BF /* Debug */,
+				13F8A3A62297D47300CBB7BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
