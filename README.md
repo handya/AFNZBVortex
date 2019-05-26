@@ -1,4 +1,6 @@
 # AFNZBVortex
+[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fappsupport.handya.net%2Fshield%2Fget%3Fapp%3Dnzbvortex)]()
+
 Objective-c API Wrapper for [NZBVortex API](https://www.nzbvortex.com/developerconnect/Network_API_Documentation_1.6.pdf)
 
 ## Requirements 
